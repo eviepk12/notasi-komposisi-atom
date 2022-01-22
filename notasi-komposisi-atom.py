@@ -1,3 +1,6 @@
+# Sekumpulan program untuk membantu tugas tugas kimia kls 10
+# made by zainal
+
 def notasiKomposisiAtom():
     soal = int(input("Tulis nomor proton di bawah kiri lambang atom :"))
     protonElektron = soal 
