@@ -2,7 +2,7 @@
 # made by zainal
 
 def notasiKomposisiAtom():
-    soal = int(input("Tulis nomor proton di bawah kiri lambang atom :"))
+    soal = int(input("Tulis nomor atom di bawah kiri lambang :"))
     protonElektron = soal 
 
     soalNeutron = int(input("Tulis nomor massa di atas kiri lambang atom :"))
@@ -12,13 +12,37 @@ def notasiKomposisiAtom():
     print("Elektron : ", protonElektron)
     print("Neutron :", neutron)
 
+def notasiKomposisiAtomBermuatan():
+    soal = int(input("Tulis nomor atom di bawah kiri lambang :"))
+    mass = int(input("Tulis nomor massa di atas kiri lambang :"))
+    muatan = input("Tulis muatan di kanan atas lambang :")
+
+    proton = soal
+
+    if muatan == "+":
+        elektron = proton - 1
+    if muatan == "-":
+        elektron = proton + 1
+    else:
+        print("Tulis muatan dengan benar!")
+
+    neutron = mass - proton
+
+    print("Proton :", proton)
+    print("Elektron :", elektron)
+    print("Neutron :", neutron)
+
 print ("1. Notasi Komposisi Atom")
+print ("2. Notasi Komposisi Atom Dengan Muatan \n")
 option = int(input("Ketik nomor yang diinginkan :"))
 
 match option:
     case 1:
         notasiKomposisiAtom()
         exit()
+    case 2:
+        notasiKomposisiAtomBermuatan()
+        exit
     case _: 
         print("Pilih yang bener!!")
 
