@@ -15,7 +15,7 @@ def notasiKomposisiAtom():
 def notasiKomposisiAtomBermuatan():
     soal = int(input("Tulis nomor atom di bawah kiri lambang :"))
     mass = int(input("Tulis nomor massa di atas kiri lambang :"))
-    muatan = input("Tulis muatan di kanan atas lambang :")
+    muatan = int(input("Tulis muatan di kanan atas lambang :"))
 
     proton = soal
 
@@ -32,8 +32,12 @@ def notasiKomposisiAtomBermuatan():
     print("Elektron :", elektron)
     print("Neutron :", neutron)
 
+def konfigurasiBohr():
+    print ("Tulis nomor massa di bawah lambang :")
+
 print ("1. Notasi Komposisi Atom")
-print ("2. Notasi Komposisi Atom Dengan Muatan \n")
+print ("2. Notasi Komposisi Atom Dengan Muatan")
+print ("3. Konfigurasi Elektron Bohr \n")
 option = int(input("Ketik nomor yang diinginkan :"))
 
 match option:
